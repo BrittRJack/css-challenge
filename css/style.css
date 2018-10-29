@@ -5,23 +5,28 @@
 * Some rules have been included here to give you a head start.
 * Create your own custom CSS rules below. Have fun!
 ******************************************************/
-html, body {
-	margin: 0;
+html, body  {
+	margin: 30px;
 	box-sizing: border-box;
 }
 
 .container {
 	margin: 0 auto;
-	padding: 0 2rem;
+	padding:0 2rem;  
+	background: white;
+	border: green;
+	font-family: sans-serif;
+
 }
 
 .clearfix {
 	clear: both;
+
 }
 
-/* create a responsive container */
 @media only screen and (min-width: 1200px) {
 	.container { width: 1170px; }
+
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
@@ -41,6 +46,7 @@ html, body {
 html { display: flex;}
 body { width: 100%;}
 
+
 .sfooter {
 	display: flex;
 	flex-direction: column;
@@ -50,6 +56,9 @@ body { width: 100%;}
 .sfooter-content {
 	flex: 1 0 auto;
 }
+
+
+
 
 /*****************************************************
 * ADD YOUR OWN CSS BELOW! (ﾉ◕ヮ◕)ﾉ*:･ﾟ✧
@@ -62,5 +71,165 @@ body { width: 100%;}
 * * Attribute Selectors
 ******************************************************/
 
+em{
+	margin: 50%;
+	padding-top: 50%;
+	padding-right: 50%;
+	padding-left: 50%;
+	padding-bottom: 50%;
+	border-style: none;
+	color: green;
+	background:black;
+
+}
 
 
+
+h1{
+	margin: 400%;
+	padding: 400%;
+	border: black;
+	border-style: solid;
+
+}
+
+.container h4{
+	margin: 30%;
+	padding: 20%;
+	border-style: solid;
+	border: green;
+	color: darkorchid;
+}
+
+.container h2{
+	margin: 20%;
+	padding-top: 20%;
+	padding-right: 20%;
+	padding-bottom: 20%;
+	padding-left: 20%;
+	border-style: solid;
+	border: red;
+	color: red;
+
+
+}
+
+.instructions-content h2{
+	margin: 20%;
+	padding-top: 20%;
+	padding-right: 20%;
+	padding-bottom: 20%;
+	padding-left: 20%;
+	border-style: solid;
+	border: red;
+	color: red;
+
+}
+
+.instructions-content ol{
+	margin: 20px;
+	padding-top: 200px;
+	padding-right: 200px;
+	padding-bottom: 200px;
+	padding-left: 200px;
+	border-style: solid;
+	border: red;
+	color: red;
+
+
+}
+
+.about-me{
+	margin: 20%;
+	padding-top: 20%;
+	padding-right: 20%;
+	padding-bottom: 20%;
+	padding-left: 20%;
+	border-style: solid;
+	border: blue;
+	color: blue;
+
+}
+
+.form-wrapper h2{
+	margin: auto;
+	padding-top: 20%;
+	padding-right: 20%;
+	padding-bottom: 20%;
+	padding-left: 20%;
+	border-style: solid;
+
+
+}
+
+.form-wrapper{
+	margin: auto;
+	padding-top: 20%;
+	padding-right: 20%;
+	padding-bottom: 20%;
+	padding-left: 20%;
+	border-style: solid;
+
+}
+
+table{
+	margin: 15%;
+	padding-top: 50%;
+	padding-right: 50%;
+	padding-bottom: 50%;
+	padding-left: 50%;
+	border-style: solid;
+
+
+}
+
+section div image{
+	margin: auto;
+	padding-top: 200px;
+	padding-right: 200px;
+	padding-bottom: 200px;
+	padding-left: 200px;
+	border-style: dot-dash;
+
+}
+
+
+.container div image{
+	margin: auto;
+	border: blue;
+	padding-top: 200px;
+	padding-right: 200px;
+	padding-bottom: 200px;
+	padding-left: 200px;
+
+}
+
+.about-me div image{
+	margin: 33%;
+	border: blue;
+	padding-top: 300%;
+	padding-right: 300%;
+	padding-bottom: 300%;
+	padding-left: 300%;
+}
+
+
+.instructions-wrapper{
+	margin: auto;
+	border: green;
+	padding-top: 200%;
+	padding-right: 200%;
+	padding-bottom: 200%;
+	padding-left: 200%;
+
+}
+
+.instructions-wrapper image{
+	margin: auto;
+	border: blue;
+	padding-top: 100%;
+	padding-right: 100%;
+	padding-bottom: 100%;
+	padding-left: 100%;
+
+}
