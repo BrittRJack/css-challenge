@@ -6,15 +6,14 @@
 * Create your own custom CSS rules below. Have fun!
 ******************************************************/
 html, body  {
-	margin: 30px;
+	margin: 0;
 	box-sizing: border-box;
 }
 
 .container {
 	margin: 0 auto;
-	padding:0 2rem;  
-	background: white;
-	font-family: sans-serif;
+	padding: 0 2rem;
+	
 
 }
 
@@ -70,165 +69,146 @@ body { width: 100%;}
 * * Attribute Selectors
 ******************************************************/
 
-em{
-	margin: 50%;
-	padding-top: 50%;
-	padding-right: 50%;
-	padding-left: 50%;
-	padding-bottom: 50%;
-	border-style: none;
-	color: green;
-	background:black;
+/** global style rules*/
 
+body{
+	font-family: monospace,"Courier New";
 }
 
-
-
-h1{
-	margin: 400%;
-	padding: 400%;
-	border: black;
-	border-style: solid;
-
+section{
+	padding: 2.75rem 0;
 }
 
-.container h4{
-	margin: 30%;
-	padding: 20%;
-	border-style: solid;
-	border: green;
-	color: darkorchid;
+header{
+	background-color: #333333;
+	color: lime;
 }
 
-.container h2{
-	margin: 20%;
-	padding-top: 20%;
-	padding-right: 20%;
-	padding-bottom: 20%;
-	padding-left: 20%;
-	border-style: solid;
-	border: red;
-	color: red;
+/** header setter rules*/
+header h1{
+	display: inline-block;
+	margin-right: 2rem;
+	font-size: 2.0rem;
+}
 
+/** welcome section*/
+img[alt="welcome to my homepage"]{
+	display: block;
+	margin: 0 auto 2rem;
+}
 
+.instructions-wrapper{
+	display: flex;
+	align-items: flex-start;
+	border: 3px solid black;
+	padding: 20px;
+}
+
+.instructions-wrapper img{
+	width: 225px;
+}
+
+.instructions-content{
+	flex: 1;
+	padding: 2rem;
 }
 
 .instructions-content h2{
-	margin: 20%;
-	padding-top: 20%;
-	padding-right: 20%;
-	padding-bottom: 20%;
-	padding-left: 20%;
-	border-style: solid;
-	border: red;
+	margin-top: 0;
+}
+
+/*** top section is above**/
+
+section.about-me{
+	background-color: blue;
+	color: #fff;
+}
+
+.about-me img{
+	width: 300px;
+	float: left;
+	margin-right: 2rem;
+	border: 3px solid white;
+}
+
+.about-me p span{
 	color: red;
+	font-size: medium;
+}
+
+/*** child*/
+section:nth-child(4)h2{
+	text-align: right;
+	margin-top: 0;
+}
+/**Problem with color changer*/
+section:nth-child(4)table{
+	width: 100%;
 
 }
 
-.instructions-content ol{
-	margin: 20px;
-	padding-top: 200px;
-	padding-right: 200px;
-	padding-bottom: 200px;
-	padding-left: 200px;
-	border-style: solid;
-	border: red;
-	color: black;
-
-
+section:nth-child(4) table td,
+section:nth-child(4) table th {
+	background-color: #333333;
+	color: lime;
+	padding: 10px;
 }
 
-.about-me{
-	margin: 20%;
-	padding-top: 20%;
-	padding-right: 20%;
-	padding-bottom: 20%;
-	padding-left: 20%;
-	border-style: solid;
-	border: blue;
-	color: blue;
-
-}
-
-.form-wrapper h2{
-	margin: auto;
-	padding-top: 20%;
-	padding-right: 20%;
-	padding-bottom: 20%;
-	padding-left: 20%;
-	border-style: solid;
-
-
+div.sfooter-content:last-child{
+	background-color: #333333;
 }
 
 .form-wrapper{
-	margin: auto;
-	padding-top: 20%;
-	padding-right: 20%;
-	padding-bottom: 20%;
-	padding-left: 20%;
-	border-style: solid;
-
+	background-color: green;
+	color: lime;
+	padding: 200px;
 }
 
-table{
-	margin: 15%;
-	padding-top: 50%;
-	padding-right: 50%;
-	padding-bottom: 50%;
-	padding-left: 50%;
-	border-style: solid;
-
-
+label{
+	display: block;
+	margin: 15px 0 5px 0;
 }
 
-section div image{
-	margin: auto;
-	padding-top: 200px;
-	padding-right: 200px;
-	padding-bottom: 200px;
-	padding-left: 200px;
-	border-style: dot-dash;
-
+input, textarea{
+	width: 30VW;
+	Padding: 8px;
+}
+/*** Contact me button*/
+button{
+	background-color: lime;
+	padding: 10px 31px;
+	font-weight: bold;
+	border: none;
 }
 
-
-.container div image{
-	margin: auto;
-	border: blue;
-	padding-top: 200px;
-	padding-right: 200px;
-	padding-bottom: 200px;
-	padding-left: 200px;
-
+form div:nth-child(4){
+	margin-bottom: 15px;
 }
 
-.about-me div image{
-	margin: 33%;
-	border: blue;
-	padding-top: 300%;
-	padding-right: 300%;
-	padding-bottom: 300%;
-	padding-left: 300%;
+.form-wrapper h2{
+	margin-top: 0;
+}
+footer{
+	background-color: #333333;
+	color: white;
+	text-align: center;
 }
 
 
-.instructions-wrapper{
-	margin: auto;
-	border: green;
-	padding-top: 200%;
-	padding-right: 200%;
-	padding-bottom: 200%;
-	padding-left: 200%;
 
-}
 
-.instructions-wrapper image{
-	margin: auto;
-	border: black;
-	padding-top: 100%;
-	padding-right: 100%;
-	padding-bottom: 100%;
-	padding-left: 100%;
 
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
